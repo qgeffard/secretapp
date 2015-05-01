@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_cgk_judgeit_domain_Topic" items="${topics}" z="lPCOBVoaHH9Uw5pwymSvBLyvDoI=">
+        <table:table data="${topics}" id="l_com_cgk_judgeit_domain_Topic" path="/topics" z="6j5+nd/vbYiDvuUQVOIF/CkxbOM=">
+            <table:column date="true" dateTimePattern="${topic_lastupdate_date_format}" id="c_com_cgk_judgeit_domain_Topic_lastUpdate" property="lastUpdate" z="8Qc8Qi5pSt5N6RM3SwdsK4N0xdo="/>
+            <table:column id="c_com_cgk_judgeit_domain_Topic_author" property="author" z="s+IX5QkTkfrkhN9vkJuR9Ec7XAk="/>
+        </table:table>
+    </page:list>
+</div>

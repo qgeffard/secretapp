@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_com_cgk_judgeit_domain_Video" modelAttribute="video" path="/videos" render="${empty dependencies}" z="QzEAyb7IVWbI0rOKwSEPXc4S0vg=">
+        <field:input field="text" id="c_com_cgk_judgeit_domain_Video_text" z="eRH9CkU5/Ms+TXmJ1Kc0803thmE="/>
+        <field:input field="link" id="c_com_cgk_judgeit_domain_Video_link" z="h6YaLd1ViCLcU1U68/aMxASahpE="/>
+        <field:select field="ownerTopic" id="c_com_cgk_judgeit_domain_Video_ownerTopic" itemValue="id" items="${topics}" path="/topics" z="jq2nWvT5cHMImptcZp89Ag5Z7+Y="/>
+        <field:select field="ownerComment" id="c_com_cgk_judgeit_domain_Video_ownerComment" itemValue="id" items="${comments}" path="/comments" z="7VweSiSx1TIkBa3MMJKY/fFnMeg="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_com_cgk_judgeit_domain_Video" render="${not empty dependencies}" z="5uUCoDXFhU7K6zT3fostFzPTivE="/>
+</div>

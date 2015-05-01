@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_cgk_judgeit_domain_Opinion" object="${opinion}" path="/opinions" z="IdGmapKyNptOH12FhkGTTcZC77U=">
+        <field:display field="author" id="s_com_cgk_judgeit_domain_Opinion_author" object="${opinion}" z="V9++8wz0d3XwgFmQG1bXxWW0QaI="/>
+        <field:display field="referent" id="s_com_cgk_judgeit_domain_Opinion_referent" object="${opinion}" z="HBN/SkaUpaOIiQOEda7r6wGczi8="/>
+        <field:display field="owner" id="s_com_cgk_judgeit_domain_Opinion_owner" object="${opinion}" z="t5oAWQQWSPHxFrCIxKsecM4vEYk="/>
+        <field:display field="status" id="s_com_cgk_judgeit_domain_Opinion_status" object="${opinion}" z="TwksEns3P02m0xc9gTLsEMW3n/k="/>
+    </page:show>
+</div>

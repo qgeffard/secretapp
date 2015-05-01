@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_cgk_judgeit_domain_Video" items="${videos}" z="MeVuEwUti6TGet/6Wqz2g14CC5o=">
+        <table:table data="${videos}" id="l_com_cgk_judgeit_domain_Video" path="/videos" z="Z9IHpIj/v+r7bDET/lqtYYz57Ck=">
+            <table:column id="c_com_cgk_judgeit_domain_Video_text" property="text" z="O0Z/10vdUzz9ZWDLT1W+UFlNlWA="/>
+            <table:column id="c_com_cgk_judgeit_domain_Video_link" property="link" z="pALoPMHDWtvtNCghNn2CgE5VNlg="/>
+            <table:column id="c_com_cgk_judgeit_domain_Video_ownerTopic" property="ownerTopic" z="izbPOizHpotncFTAv/VUV/f77/8="/>
+            <table:column id="c_com_cgk_judgeit_domain_Video_ownerComment" property="ownerComment" z="347cPlhmygArQXsBHEXtOd6EE44="/>
+        </table:table>
+    </page:list>
+</div>

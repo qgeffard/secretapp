@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_cgk_judgeit_domain_Judge" object="${judge}" path="/judges" z="F3JBfiKWfTXRi0kgrH+bdA4bYu4=">
+        <field:display field="password" id="s_com_cgk_judgeit_domain_Judge_password" object="${judge}" z="J8ubKyltx/WICXZwHYVhsaNZUAU="/>
+        <field:display field="score" id="s_com_cgk_judgeit_domain_Judge_score" object="${judge}" z="1LhxVIX8oDUZqjrlY+zEM4dW1RE="/>
+        <field:display field="email" id="s_com_cgk_judgeit_domain_Judge_email" object="${judge}" z="N8HjpCunWWpxVP7K86bj2IkDTws="/>
+        <field:display field="login" id="s_com_cgk_judgeit_domain_Judge_login" object="${judge}" z="9S1p/p3aarwjLAfas7c9WIGnsAM="/>
+        <field:display field="rank" id="s_com_cgk_judgeit_domain_Judge_rank" object="${judge}" z="1IAbiA6wJYInJVlS1WW9hMygCHM="/>
+    </page:show>
+</div>

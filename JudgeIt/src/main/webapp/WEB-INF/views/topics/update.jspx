@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_cgk_judgeit_domain_Topic" modelAttribute="topic" path="/topics" versionField="Version" z="YPgMO0qHRtsNy/2w8BzenEKaJ4w=">
+        <field:datetime dateTimePattern="${topic_lastupdate_date_format}" field="lastUpdate" id="c_com_cgk_judgeit_domain_Topic_lastUpdate" z="3uqbxj0G1vxN0hVdAAAR29j/7Tc="/>
+        <field:select field="author" id="c_com_cgk_judgeit_domain_Topic_author" itemValue="id" items="${judges}" path="/judges" z="O3kTm+OntHPHj40tNx7uyDGlpss="/>
+        <field:simple field="opinions" id="c_com_cgk_judgeit_domain_Topic_opinions" messageCode="entity_reference_not_managed" messageCodeAttribute="Opinion" z="tXSOYFKnnZLLQ6gOWyPLWnfwCpc="/>
+        <field:simple field="medias" id="c_com_cgk_judgeit_domain_Topic_medias" messageCode="entity_reference_not_managed" messageCodeAttribute="Media" z="hU/eoPBV+4b2vn7cq7XQ5DACHCw="/>
+    </form:update>
+</div>

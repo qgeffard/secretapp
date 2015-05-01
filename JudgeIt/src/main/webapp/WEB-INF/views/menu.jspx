@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu" id="menu" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
+        <menu:category id="c_image" z="mSf7FGrRXXELgzAwg3iJrzzPIdc=">
+            <menu:item id="i_image_new" messageCode="global_menu_new" url="/images?form" z="oPECbYp27LyoOFNhUF5uzrz0lK8="/>
+            <menu:item id="i_image_list" messageCode="global_menu_list" url="/images?page=1&amp;size=${empty param.size ? 10 : param.size}" z="sH4rYLSx/udcaIMNLbr/uqABdVA="/>
+        </menu:category>
+        <menu:category id="c_rank" z="7gPeMMgg4QwydRn8hxyPMiRKaTA=">
+            <menu:item id="i_rank_new" messageCode="global_menu_new" url="/ranks?form" z="mnaVJiGo2LgjDbh3NRC/eilu75o="/>
+            <menu:item id="i_rank_list" messageCode="global_menu_list" url="/ranks?page=1&amp;size=${empty param.size ? 10 : param.size}" z="lr6jM12L79+bTA3gitT41PiQqrg="/>
+        </menu:category>
+        <menu:category id="c_topic" z="wSmDjpo9Vg6OKiza0vsFDFvtqYI=">
+            <menu:item id="i_topic_new" messageCode="global_menu_new" url="/topics?form" z="6SERWdKOafumerqp5IWOYZ77rGM="/>
+            <menu:item id="i_topic_list" messageCode="global_menu_list" url="/topics?page=1&amp;size=${empty param.size ? 10 : param.size}" z="5Jq20ypYFl/VCnw+28VEjhNlmf0="/>
+        </menu:category>
+        <menu:category id="c_video" z="K/kqlQzrZycS86KIBJY9si6eRaE=">
+            <menu:item id="i_video_new" messageCode="global_menu_new" url="/videos?form" z="oZwUwfRjcFWfb40z51th+96iRNI="/>
+            <menu:item id="i_video_list" messageCode="global_menu_list" url="/videos?page=1&amp;size=${empty param.size ? 10 : param.size}" z="Xb0REIUUMuk/dafqkaXFuusDyew="/>
+        </menu:category>
+        <menu:category id="c_song" z="vgIJxMSsPMv0U7Pgry/KsMSq5sg=">
+            <menu:item id="i_song_new" messageCode="global_menu_new" url="/songs?form" z="IlkK1qrcn+Bg8G/TnNRDh2Xm6sg="/>
+            <menu:item id="i_song_list" messageCode="global_menu_list" url="/songs?page=1&amp;size=${empty param.size ? 10 : param.size}" z="KTCgRS3wp8308upxM/ta77eZsks="/>
+        </menu:category>
+        <menu:category id="c_media" z="SqacaDVnSrXmQJB69xz5K1fP2Fs=">
+            <menu:item id="i_media_new" messageCode="global_menu_new" url="/medias?form" z="OIfbj50qi1kFkSFTSJLE93WzBC0="/>
+            <menu:item id="i_media_list" messageCode="global_menu_list" url="/medias?page=1&amp;size=${empty param.size ? 10 : param.size}" z="VgX3ic5+KXqm7H7gzcyK4PHeDvg="/>
+        </menu:category>
+        <menu:category id="c_comment" z="KpI9zqkdeE9bZ8zxvHTXU6Lm24s=">
+            <menu:item id="i_comment_new" messageCode="global_menu_new" url="/comments?form" z="q921JBcftknHR9qtTYaac8JDm7g="/>
+            <menu:item id="i_comment_list" messageCode="global_menu_list" url="/comments?page=1&amp;size=${empty param.size ? 10 : param.size}" z="Z9n1g0FmjBLpyAPjZHhefDZLMtY="/>
+        </menu:category>
+        <menu:category id="c_judge" z="rZZRReupg+oBta3UllMpTUVSY0A=">
+            <menu:item id="i_judge_new" messageCode="global_menu_new" url="/judges?form" z="KgdwFjhLRjKrUrvz1xddhdYDJGg="/>
+            <menu:item id="i_judge_list" messageCode="global_menu_list" url="/judges?page=1&amp;size=${empty param.size ? 10 : param.size}" z="SMTNuO+aWzoL+JopN7FFc1SBJKI="/>
+        </menu:category>
+        <menu:category id="c_opinion" z="kyA/hipM+dZGTn2ivN0cH9/a+QE=">
+            <menu:item id="i_opinion_new" messageCode="global_menu_new" url="/opinions?form" z="memgrmscFzAhf7elaa8K2DqTlEs="/>
+            <menu:item id="i_opinion_list" messageCode="global_menu_list" url="/opinions?page=1&amp;size=${empty param.size ? 10 : param.size}" z="gWF3I4GyjNoANv6nNyTsXDMDt/w="/>
+        </menu:category>
+    </menu:menu>
+</div>

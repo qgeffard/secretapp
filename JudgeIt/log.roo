@@ -1,0 +1,48 @@
+project --topLevelPackage com.cgk.judgeit
+jpa setup --provider HIBERNATE --database HYPERSONIC_PERSISTENT
+enum type --class ~.domain.Status
+enum constant --name good
+enum constant --name bad
+enum constant --name nocare
+entity jpa --class ~.domain.Media
+entity jpa --class ~.domain.Opinion
+entity jpa --class ~.domain.Judge
+entity jpa --class ~.domain.Topic
+entity jpa --class ~.domain.Rank
+entity jpa --class ~.domain.Song  --extends ~.domain.Media
+entity jpa --class ~.domain.Comment  --extends ~.domain.Opinion
+entity jpa --class ~.domain.Image  --extends ~.domain.Media
+entity jpa --class ~.domain.Video  --extends ~.domain.Media
+field string --fieldName link --class ~.domain.Song
+field string --fieldName text --class ~.domain.Media
+field string --fieldName password --class ~.domain.Judge
+field number --fieldName score --type int --class ~.domain.Judge
+field string --fieldName email --class ~.domain.Judge
+field string --fieldName login --class ~.domain.Judge
+field date   --fieldName lastUpdate --type java.util.Date --class ~.domain.Topic
+field date   --fieldName lastUpdate --type java.util.Date --class ~.domain.Comment
+field string --fieldName name --class ~.domain.Rank
+field string --fieldName link --class ~.domain.Image
+field string --fieldName link --class ~.domain.Video
+field list --type ~.domain.Opinion --fieldName opinions --class ~.domain.Judge --cardinality ONE_TO_MANY --mappedBy author
+field reference --fieldName author --type ~.domain.Judge --cardinality MANY_TO_ONE --class ~.domain.Opinion
+field list --type ~.domain.Topic --fieldName topics --class ~.domain.Judge --cardinality ONE_TO_MANY --mappedBy author
+field reference --fieldName author --type ~.domain.Judge --cardinality MANY_TO_ONE --class ~.domain.Topic
+field list --type ~.domain.Opinion --fieldName opinions --class ~.domain.Topic --cardinality ONE_TO_MANY --mappedBy referent
+field reference --fieldName referent --type ~.domain.Topic --cardinality MANY_TO_ONE --class ~.domain.Opinion
+field list --type ~.domain.Media --fieldName medias --class ~.domain.Topic --cardinality ONE_TO_MANY --mappedBy ownerTopic
+field reference --fieldName ownerTopic --type ~.domain.Topic --cardinality MANY_TO_ONE --class ~.domain.Media
+field list --type ~.domain.Media --fieldName medias --class ~.domain.Comment --cardinality ONE_TO_MANY --mappedBy ownerComment
+field reference --fieldName ownerComment --type ~.domain.Comment --cardinality MANY_TO_ONE --class ~.domain.Media
+field list --type ~.domain.Opinion --fieldName childOpinions --class ~.domain.Comment --cardinality ONE_TO_MANY --mappedBy owner
+field reference --fieldName owner --type ~.domain.Comment --cardinality MANY_TO_ONE --class ~.domain.Opinion
+field enum --fieldName status --type ~.domain.Status --class ~.domain.Opinion
+field reference --fieldName rank --type ~.domain.Rank --class ~.domain.Judge 
+web mvc setup
+web mvc all --package ~.web
+web mvc finder all
+perform eclipse
+// script --file /home/doot/workspace/judgeit_mod/model_v1.roo
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log closed at 2015-05-01 20:13:30
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log opened at 2015-05-01 20:18:18
+// Spring Roo 1.3.1.RC1 [rev 4877cfb] log closed at 2015-05-01 20:20:08

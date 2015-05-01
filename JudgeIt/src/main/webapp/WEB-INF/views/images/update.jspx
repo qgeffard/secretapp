@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_cgk_judgeit_domain_Image" modelAttribute="image" path="/images" versionField="Version" z="aKAA7PGexN2x7qsS8jOU6DKC8Xk=">
+        <field:input field="text" id="c_com_cgk_judgeit_domain_Image_text" z="OX+cNg3f3HifAMUNYMYyWUjYJ1g="/>
+        <field:input field="link" id="c_com_cgk_judgeit_domain_Image_link" z="XEK+2s1zA2So2Vh9Lsq0ZAej2OI="/>
+        <field:select field="ownerTopic" id="c_com_cgk_judgeit_domain_Image_ownerTopic" itemValue="id" items="${topics}" path="/topics" z="skotIoZ44z09rU5oXnQBTPzJYYY="/>
+        <field:select field="ownerComment" id="c_com_cgk_judgeit_domain_Image_ownerComment" itemValue="id" items="${comments}" path="/comments" z="fd11ZV0m/dIYqn6cqcXLq6C/VkU="/>
+    </form:update>
+</div>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_cgk_judgeit_domain_Opinion" items="${opinions}" z="1ta5TmONXMY2WzJR0xwhiPaEpFY=">
+        <table:table data="${opinions}" id="l_com_cgk_judgeit_domain_Opinion" path="/opinions" z="hOAVCGz3AmbYjl854QZqycezs4I=">
+            <table:column id="c_com_cgk_judgeit_domain_Opinion_author" property="author" z="d+UoHgqeOrBLNV7cIX2vpPYuLVw="/>
+            <table:column id="c_com_cgk_judgeit_domain_Opinion_referent" property="referent" z="zua6oYd7tEakvkrIOr/kVLVzk2A="/>
+            <table:column id="c_com_cgk_judgeit_domain_Opinion_owner" property="owner" z="SaEzpLcl1tv9ZejC9rvlfzNXkJs="/>
+            <table:column id="c_com_cgk_judgeit_domain_Opinion_status" property="status" z="1bYsgzxZyxOPhXOG0hPSwBHUHRA="/>
+        </table:table>
+    </page:list>
+</div>

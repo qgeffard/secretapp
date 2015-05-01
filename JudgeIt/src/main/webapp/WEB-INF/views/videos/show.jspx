@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_cgk_judgeit_domain_Video" object="${video}" path="/videos" z="n/jSlie3NJdsngouxEkI1K388uQ=">
+        <field:display field="text" id="s_com_cgk_judgeit_domain_Video_text" object="${video}" z="7fDYZedYfExh7vVj6sZynJUGaB0="/>
+        <field:display field="link" id="s_com_cgk_judgeit_domain_Video_link" object="${video}" z="K/3+FC10yh4k4yimAVJgtdfcBy8="/>
+        <field:display field="ownerTopic" id="s_com_cgk_judgeit_domain_Video_ownerTopic" object="${video}" z="tAEjvnFLl7BMxhgKzum73fRFESI="/>
+        <field:display field="ownerComment" id="s_com_cgk_judgeit_domain_Video_ownerComment" object="${video}" z="pfgna4SloKidYgFYbpQsJMp6rEM="/>
+    </page:show>
+</div>

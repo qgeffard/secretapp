@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_cgk_judgeit_domain_Judge" items="${judges}" z="L/olI1LCOKnzCPtX4qdg+KCUSKc=">
+        <table:table data="${judges}" id="l_com_cgk_judgeit_domain_Judge" path="/judges" z="8lKZbfi3bqmLs2M+ymLMOw78jz4=">
+            <table:column id="c_com_cgk_judgeit_domain_Judge_password" property="password" z="jB2P8tj8eAQIkFqiZfXQrV+OPhU="/>
+            <table:column id="c_com_cgk_judgeit_domain_Judge_score" property="score" z="a+uyRpXG+3p9KsrbNaYAKRK5kUM="/>
+            <table:column id="c_com_cgk_judgeit_domain_Judge_email" property="email" z="H2ZOMqvwh8LVWmdCCAOCuzagIN8="/>
+            <table:column id="c_com_cgk_judgeit_domain_Judge_login" property="login" z="zJ0UCj6NmA6/zWW/6pcSW6IZnCE="/>
+        </table:table>
+    </page:list>
+</div>

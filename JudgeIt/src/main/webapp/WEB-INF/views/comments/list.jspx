@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_cgk_judgeit_domain_Comment" items="${comments}" z="643qMSGBGfPApVe/gPkjeB0E8cE=">
+        <table:table data="${comments}" id="l_com_cgk_judgeit_domain_Comment" path="/comments" z="RHRBhQ7iyCdPOW8WPEwGf/ayJLE=">
+            <table:column id="c_com_cgk_judgeit_domain_Comment_author" property="author" z="zaoTKDwWv9YRciVaUVu8sVuOJl0="/>
+            <table:column id="c_com_cgk_judgeit_domain_Comment_referent" property="referent" z="MbuOHugIZQ6P6tZz+OEheiDmhk4="/>
+            <table:column date="true" dateTimePattern="${comment_lastupdate_date_format}" id="c_com_cgk_judgeit_domain_Comment_lastUpdate" property="lastUpdate" z="twAdEQE9dNrxeVVRups8AnjDGKo="/>
+            <table:column id="c_com_cgk_judgeit_domain_Comment_owner" property="owner" z="o+dG+g6GT7vFjbJkLAbzULdVBQs="/>
+            <table:column id="c_com_cgk_judgeit_domain_Comment_status" property="status" z="RRXn93+oEvCQmDIIkaCogItGvaU="/>
+        </table:table>
+    </page:list>
+</div>

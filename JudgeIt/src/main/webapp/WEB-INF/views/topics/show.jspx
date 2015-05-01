@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_cgk_judgeit_domain_Topic" object="${topic}" path="/topics" z="aoYwk7Y47uObQ1sWeKU/psvbz00=">
+        <field:display date="true" dateTimePattern="${topic_lastupdate_date_format}" field="lastUpdate" id="s_com_cgk_judgeit_domain_Topic_lastUpdate" object="${topic}" z="IQakTwX9CREIKfbgarJhMXuRNnI="/>
+        <field:display field="author" id="s_com_cgk_judgeit_domain_Topic_author" object="${topic}" z="Y2PJwgH2YMR+6FMdT7fW86UnTnk="/>
+    </page:show>
+</div>
